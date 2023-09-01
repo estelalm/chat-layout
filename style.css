@@ -1,3 +1,21 @@
+/*       rever essa estrutura......... 
+        <div class="chat">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDWs-FJ6bIzHjMYRjKxGfUzATaz3H4vsaeEw&usqp=CAU" alt="perfil">
+            <div class="conteudo-meio">
+                <div class="cima-contato">
+                    <div class="titulo-contato">
+                        <h2 class="contato">Jerome Bueno</h2>
+                        <div class="numero-mensagens">1</div>
+                    </div>
+                    <p class="tempo-envio">Há 30 minutos</p>
+                </div>
+                <span class="mensagem">Posso realizar o pagamento por...</span>
+                <div class="atendente"> <img src="./img/atendente.png" alt="ícone de atendente">João Paulo</div>
+            </div>
+        </div>
+        
+*/
+
 *{
     margin: 0;
     padding: 0;

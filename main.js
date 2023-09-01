@@ -4,7 +4,7 @@ const clientes = [
     {
         nome: 'Jerome Bueno',
         notificacao: '2',
-        imagem: 'jerome.png',
+        imagem: 'hugo.jpg',
         mensagem: 'Posso realizar o pagamento por...',
         atendente: 'João Paulo',
         tempoEnvio: '30 minutos'
@@ -12,7 +12,7 @@ const clientes = [
     {
         nome: 'Jerome Bueno',
         notificacao: '2',
-        imagem: 'jerome.png',
+        imagem: 'hugo.jpg',
         mensagem: 'Posso realizar o pagamento por...',
         atendente: 'João Paulo',
         tempoEnvio: '30 minutos'
@@ -20,7 +20,7 @@ const clientes = [
     {
         nome: 'Daniel Silva',
         notificacao: '1',
-        imagem: 'daniel.png',
+        imagem: 'joao.jpg',
         mensagem: 'Márcia diz: Bom dia, como posso ajuda...',
         atendente: 'Márcia',
         tempoEnvio: '5 minutos'
@@ -56,7 +56,7 @@ function criarChat (cliente){
 
     const tempoEnvio = document.createElement('p')
     tempoEnvio.classList.add('tempo-envio')
-    tempoEnvio.textContent = `Há ${tempoEnvio}`
+    tempoEnvio.textContent = `Há ${cliente.tempoEnvio}`
 
     const mensagem = document.createElement('span')
     mensagem.classList.add('mensagem')
@@ -69,9 +69,9 @@ function criarChat (cliente){
     tituloContato.replaceChildren(contato, numeroMensagens)
     cimaContato.replaceChildren(tituloContato, tempoEnvio)
 
-    conteudoMeio.replaceChildren(cimaContato,mensagem, atendente)
+    conteudoMeio.replaceChildren(cimaContato, mensagem, atendente)
 
-    chat.replaceChildren(conteudoMeio, imagem)
+    chat.replaceChildren(imagem, conteudoMeio)
 
     container.appendChild(chat)
 
