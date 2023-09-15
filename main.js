@@ -17,78 +17,18 @@ const clientes = [
         notificacao: '2',
         imagem: 'chuu2.jpg',
         mensagem: 'Teste: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'orbit',
+        atendente: 'Teste',
         tempoEnvio: '30 minutos',
         plataforma: 'Whatsapp',
         plataformaImg: 'zap.png'
     },
     {
-        nome: 'Chuu from LOONA',
-        notificacao: '2',
-        imagem: 'chuu2.jpg',
-        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'HEART attack',
-        tempoEnvio: '30 minutos',
-        plataforma: 'Whatsapp',
-        plataformaImg: 'zap.png'
-    },
-    {
-        nome: 'Chuu from LOONA',
-        notificacao: '2',
-        imagem: 'chuu2.jpg',
-        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'Chuu atende',
-        tempoEnvio: '30 minutos',
-        plataforma: 'Messenger',
-        plataformaImg: 'messenger.png'
-    },
-    {
-        nome: 'Chuu from LOONA',
-        notificacao: '2',
-        imagem: 'chuu2.jpg',
-        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'KIM JIWOO',
-        tempoEnvio: '30 minutos',
-        plataforma: 'Telegram',
-        plataformaImg: 'telegram.png'
-    },
-    {
-        nome: 'Chuu from LOONA',
-        notificacao: '2',
-        imagem: 'chuu2.jpg',
-        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'KIM JIWOO',
-        tempoEnvio: '30 minutos',
-        plataforma: 'Telegram',
-        plataformaImg: 'telegram.png'
-    },    
-    {
-        nome: 'Chuu from LOONA',
-        notificacao: '2',
-        imagem: 'chuu2.jpg',
-        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'KIM JIWOO',
-        tempoEnvio: '30 minutos',
-        plataforma: 'Telegram',
-        plataformaImg: 'telegram.png'
-    },    
-    {
-        nome: 'Chuu from LOONA',
-        notificacao: '2',
-        imagem: 'chuu2.jpg',
-        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'KIM JIWOO',
-        tempoEnvio: '30 minutos',
-        plataforma: 'Telegram',
-        plataformaImg: 'telegram.png'
-    },
-    {
-        nome: 'Chuu from LOONA',
-        notificacao: '2',
-        imagem: 'chuu2.jpg',
-        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'KIM JIWOO',
-        tempoEnvio: '30 minutos',
+        nome: 'Nome aletório aqui .....???',
+        notificacao: '1',
+        imagem: 'icone.png',
+        mensagem: 'Atendente: Olá [nome] blablablabla',
+        atendente: 'Atendente',
+        tempoEnvio: '5 minutos',
         plataforma: 'Telegram',
         plataformaImg: 'telegram.png'
     }

@@ -60,6 +60,7 @@ header{
         "a a e e e e e e e g"
         "a a f f f f f f f g";
     grid-auto-rows: 3.5vh;
+    place-content: left;
 }
 
 
@@ -115,6 +116,13 @@ header{
 .plataforma{
     position: relative;
     left: 100%;
-    width: 30px;
+    width: 2.6vw;
     padding: 0;
+
+}
+
+@media(max-width: 400px){
+
+
+
 }
