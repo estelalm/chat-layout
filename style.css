@@ -21,13 +21,14 @@ body{
     width: 40vw;
     height: 90vh;
     overflow-y: hidden;
-    border: solid 1px rgb(197, 231, 194);
+    border: solid 1px #97ccb5(93, 109, 91);
     border-radius: 10px;
     padding: 1vw 0;
     overflow-x: hidden;
-    background-color: #b8cebe;
-    box-shadow: 0 0 3px #315a37 ;
+    background-color: #97ccb5;
+    box-shadow: 0 0 3px #47664c ;
     align-items: center;
+    gap: 1vh;
 }
 .chat{
     display: flex;
@@ -37,16 +38,16 @@ body{
     gap: 2vh;
     overflow-x: hidden;
     background-color: #dbf5e0;
+    height: 90%;
 }
 
 header{
-    background-color: #b8cebe;
     width: 100%;
     height: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1vh;
+    font-size: 1vw;
 }
 
 .chat::-webkit-scrollbar {
@@ -138,6 +139,11 @@ header{
     padding: 0;
 }
 
+footer{
+    position: relative;
+    font-size: 0.4vw;
+}
+
 @media (max-width: 400px){
     .container{
         display: flex;
@@ -155,6 +161,10 @@ header{
         grid-auto-rows: 2vh;
         grid-auto-columns: 6% 6% 16% 10% 5% 5% 5% 10% 10%;
     }
+    header{
+        font-size: 2vw;
+    }
+
     .perfil{
         height: 10vw;
     }
