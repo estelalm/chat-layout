@@ -12,11 +12,11 @@
 
 const clientes = [
     {
-        nome: 'Chuu',
+        nome: 'Chuu do LOONA',
         notificacao: '2',
         imagem: 'chuu2.jpg',
-        mensagem: 'Atendente: [chuu.png] Você viu essa mulher? Se não viu, agora está vendo!',
-        atendente: 'Atdt. do Mês',
+        mensagem: 'Ives: [chuu.png] Você viu essa mulher? Se não viu, agora está vendo!',
+        atendente: 'Ives',
         tempoEnvio: '30 minutos',
         plataforma: 'Whatsapp',
         plataformaImg: 'zap.png'
@@ -32,56 +32,25 @@ const clientes = [
         plataformaImg: 'telegram.png'
     },
     {
-        nome: 'Chuu from LOONA',
+        nome: 'Chuu',
         notificacao: '2',
         imagem: 'chuu.jpg',
-        mensagem: 'Teste: 점점 더 두근대는 맘전부 다 줄게 take my heart',
-        atendente: 'Teste',
+        mensagem: 'Chuu: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'Blockberry Creative',
         tempoEnvio: '30 minutos',
         plataforma: 'Wechat',
         plataformaImg: 'wechat.png'
     },
     {
-        nome: 'Nome aletório aqui',
+        nome: '+55 11 9000-0000',
         notificacao: '1',
         imagem: 'icone.png',
-        mensagem: 'Atendente: Olá [nome] blablablabla',
+        mensagem: 'Atendente: Olá! Para fazer sua inscrição...',
         atendente: 'Atendente',
         tempoEnvio: '5 minutos',
         plataforma: 'Messenger',
         plataformaImg: 'messenger.png'
-    },
-    {
-        nome: 'Nome aletório aqui',
-        notificacao: '1',
-        imagem: 'icone.png',
-        mensagem: 'Atendente: Olá [nome] blablablabla',
-        atendente: 'Atendente',
-        tempoEnvio: '5 minutos',
-        plataforma: 'Telegram',
-        plataformaImg: 'telegram.png'
-    },
-    {
-        nome: 'Nome aletório aqui',
-        notificacao: '1',
-        imagem: 'icone.png',
-        mensagem: 'Atendente: Olá [nome] blablablabla',
-        atendente: 'Atendente',
-        tempoEnvio: '5 minutos',
-        plataforma: 'Telegram',
-        plataformaImg: 'telegram.png'
-    },
-    {
-        nome: 'Nome aletório aqui',
-        notificacao: '1',
-        imagem: 'icone.png',
-        mensagem: 'Atendente: Olá [nome] blablablabla',
-        atendente: 'Atendente',
-        tempoEnvio: '5 minutos',
-        plataforma: 'Telegram',
-        plataformaImg: 'telegram.png'
     }
-
 ]
 
 function criarChat (cliente){

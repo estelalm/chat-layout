@@ -52,8 +52,6 @@ header{
     row-gap: 1vh;
     column-gap: 1vw;
     padding: 1.4vh 1vw;
-    min-width: 300px;
-    max-width: 44vw;
     height: 12vh;
     border: solid rgba(179, 211, 190, 0.888) 1px;
     border-radius: 10px;
@@ -70,7 +68,8 @@ header{
 .perfil{
     grid-area: a;
     border-radius: 50%;
-    height: 70%;
+    height: 4.2vw;
+    place-self: start;
 }
 .contato{
     width: 100%;
@@ -124,7 +123,6 @@ header{
     left: 100%;
     width: 2.6vw;
     padding: 0;
-
 }
 
 @media (max-width: 400px){
@@ -138,21 +136,52 @@ header{
     
     .container-chat{
         padding: 1.4vh 1vw;
-        min-width: 300px;
-        max-width: 44vw;
         height: 12vh;
-        border: solid rgba(179, 211, 190, 0.888) 1px;
-        border-radius: 10px;
-        grid-template-areas: 
-            "a a b b b c c d d g"
-            "a a e e e e e e e g"
-            "a a f f f f f f f g";
-        grid-auto-rows: 3.5vh;
+        width: 100%;
+        height: 10vh;
+        grid-auto-rows: 2vh;
         grid-auto-columns: 5% 5% 16% 5% 5% 5% 5% 5% 15%;
-        place-content: left;
     }
     .perfil{
         height: 10vw;
+    }
+
+    .contato{
+        width: 100%;
+        grid-area: b;
+        font-size: 1.2vw;
+        font-weight: bold;
+    }
+    .notificacao{
+        background-color: #235f2b;
+        color: wheat;
+        grid-area: c;
+        width: 1.6vw;
+        height: 1.6vw;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 3.2vh;
+        font-size: 1vw;
+    }
+    .tempo-envio{
+        grid-area: d;
+        font-size: 0.8vw;
+        width: 100%;
+        color: #000000a4;
+    }
+    .mensagem{
+        grid-area: e;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 2.4vw;
+    }
+    .atendente{
+        font-size: 2vw;
+        position: relative;
+        width: 40%;
+        padding: 0.2vw 0.6vw;
+        gap: 0.6vw;
+        height: 80%;
     }
 
 
