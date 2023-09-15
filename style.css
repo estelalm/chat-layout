@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #bad8bf7a;
+    background-color: #9fbba3;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     place-content: center;
@@ -20,14 +20,23 @@ body{
     flex-direction: column;
     width: 40vw;
     height: 90vh;
-    overflow-y: scroll;
-    border: solid 1px rgba(128, 160, 125, 0.345);
+    overflow-y: hidden;
+    border: solid 1px rgb(197, 231, 194);
     border-radius: 10px;
+    padding: 1vw 0;
+    overflow-x: hidden;
+    background-color: #b8cebe;
+    box-shadow: 0 0 3px #315a37 ;
+    align-items: center;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
     padding: 2vw;
     gap: 2vh;
     overflow-x: hidden;
-    background-color: #dbf5e038;
-    box-shadow: 0 0 3px #235f2b ;
+    background-color: #dbf5e0;
 }
 
 header{
@@ -37,15 +46,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
+    padding: 1vh;
 }
 
-::-webkit-scrollbar {
+.chat::-webkit-scrollbar {
     width: 5px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #dcfde814; 
-  }
+}
+.chat::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 
 .container-chat{
     display: grid;
@@ -53,17 +63,20 @@ header{
     column-gap: 1vw;
     padding: 1.4vh 1vw;
     height: 12vh;
-    border: solid rgba(179, 211, 190, 0.888) 1px;
+    border: solid rgba(168, 216, 185, 0.888) 1px;
     border-radius: 10px;
     grid-template-areas: 
         "a a b b b c c d d g"
         "a a e e e e e e e g"
         "a a f f f f f f f g";
     grid-auto-rows: 3.5vh;
-    grid-auto-columns: 5% 5% 16% 5% 5% 5% 5% 5% 15%;
+    grid-auto-columns: 5% 5% 16% 5% 6% 5% 5% 5% 15%;
     place-content: left;
+    transition: 0.5s;
 }
-
+.container-chat:hover{
+    background: linear-gradient(0.180turn, #235f2b42, #a4f8af1f);
+}
 
 .perfil{
     grid-area: a;
@@ -79,7 +92,7 @@ header{
 }
 .notificacao{
     background-color: #235f2b;
-    color: wheat;
+    color: rgb(233, 235, 234);
     grid-area: c;
     width: 1.6vw;
     height: 1.6vw;
@@ -102,7 +115,7 @@ header{
 }
 .atendente{
     display: flex;
-    background-color: #70cf7d;
+    background-color: #6fb698;
     grid-area: f;
     font-size: 0.8vw;
     position: relative;
@@ -140,7 +153,7 @@ header{
         width: 100%;
         height: 10vh;
         grid-auto-rows: 2vh;
-        grid-auto-columns: 5% 5% 16% 5% 5% 5% 5% 5% 15%;
+        grid-auto-columns: 6% 6% 16% 10% 5% 5% 5% 10% 10%;
     }
     .perfil{
         height: 10vw;
@@ -149,23 +162,23 @@ header{
     .contato{
         width: 100%;
         grid-area: b;
-        font-size: 1.2vw;
+        font-size: 2.8vw;
         font-weight: bold;
     }
     .notificacao{
         background-color: #235f2b;
         color: wheat;
         grid-area: c;
-        width: 1.6vw;
-        height: 1.6vw;
-        text-align: center;
+        width: 3vw;
+        height: 3vw;
         border-radius: 50%;
-        line-height: 3.2vh;
-        font-size: 1vw;
+        line-height: 1.6vh;
+        font-size: 2vw;
+        padding: 0.6vw;
     }
     .tempo-envio{
         grid-area: d;
-        font-size: 0.8vw;
+        font-size: 2vw;
         width: 100%;
         color: #000000a4;
     }
@@ -178,11 +191,16 @@ header{
     .atendente{
         font-size: 2vw;
         position: relative;
-        width: 40%;
-        padding: 0.2vw 0.6vw;
+        width: 50%;
+        padding: 0.4vw 0.8vw;
         gap: 0.6vw;
         height: 80%;
     }
-
+    .plataforma{
+        position: relative;
+        left: 100%;
+        width: 6vw;
+        padding: 0;
+    }
 
 }

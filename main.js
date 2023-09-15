@@ -15,9 +15,9 @@ const clientes = [
         nome: 'Chuu do LOONA',
         notificacao: '2',
         imagem: 'chuu2.jpg',
-        mensagem: 'Ives: [chuu.png] Você viu essa mulher? Se não viu, agora está vendo!',
+        mensagem: 'Ives: Novo cartaz: [chuu.png] Você viu essa mulher? Se não viu, agora está vendo!',
         atendente: 'Ives',
-        tempoEnvio: '30 minutos',
+        tempoEnvio: '1 minuto',
         plataforma: 'Whatsapp',
         plataformaImg: 'zap.png'
     },
@@ -25,17 +25,17 @@ const clientes = [
         nome: 'Sharpay Evans',
         notificacao: '9',
         imagem: 'sharpay.webp',
-        mensagem: 'Sharpay: That is insulting! I need more!',
+        mensagem: 'Sharpay: I want it all! The fame and the fortune and more! [traduzir]',
         atendente: 'Ryan Evans',
         tempoEnvio: '2 minutos',
         plataforma: 'Telegram',
         plataformaImg: 'telegram.png'
     },
     {
-        nome: 'Chuu',
+        nome: 'Jiwoo',
         notificacao: '2',
         imagem: 'chuu.jpg',
-        mensagem: 'Chuu: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        mensagem: 'Jiwoo: 점점 더 두근대는 맘전부 다 줄게 take my heart',
         atendente: 'Blockberry Creative',
         tempoEnvio: '30 minutos',
         plataforma: 'Wechat',
@@ -45,16 +45,38 @@ const clientes = [
         nome: '+55 11 9000-0000',
         notificacao: '1',
         imagem: 'icone.png',
-        mensagem: 'Atendente: Olá! Para fazer sua inscrição...',
+        mensagem: 'Atendente: Olá! Para fazer seu cadastro na plataforma é só',
+        atendente: 'Atendente',
+        tempoEnvio: '1 hora',
+        plataforma: 'Messenger',
+        plataformaImg: 'messenger.png'
+    },
+    {
+        nome: '+55 11 9000-0000',
+        notificacao: '1',
+        imagem: 'icone.png',
+        mensagem: 'Atendente: Olá! Para fazer seu cadastro na plataforma é só',
+        atendente: 'Atendente',
+        tempoEnvio: '5 minutos',
+        plataforma: 'Messenger',
+        plataformaImg: 'messenger.png'
+    },
+    {
+        nome: '+55 11 9000-0000',
+        notificacao: '1',
+        imagem: 'icone.png',
+        mensagem: 'Atendente: Olá! Para fazer seu cadastro na plataforma é só',
         atendente: 'Atendente',
         tempoEnvio: '5 minutos',
         plataforma: 'Messenger',
         plataformaImg: 'messenger.png'
     }
+
 ]
 
 function criarChat (cliente){
     const container = document.getElementById('container')
+    const chatsContainer = document.getElementById('chats')
 
     const chat = document.createElement('div')
     chat.classList.add('container-chat')
@@ -96,7 +118,8 @@ function criarChat (cliente){
 
     atendente.appendChild(atendenteIcon)
     chat.replaceChildren(perfil, contato, numeroMensagens, tempoEnvio, mensagem, atendente, plataforma)
-    container.appendChild(chat)
+    chatsContainer.appendChild(chat)
+    container.appendChild(chatsContainer)
 }
 
 clientes.forEach(criarChat)
