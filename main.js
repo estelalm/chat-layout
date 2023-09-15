@@ -35,7 +35,7 @@ const clientes = [
         nome: 'Jiwoo',
         notificacao: '3',
         imagem: 'chuu.jpg',
-        mensagem: 'Jiwoo: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        mensagem: 'Jiwoo: 점점 더 두근대는 맘전부 다 줄게',
         atendente: 'Blockberry Creative',
         tempoEnvio: '30 minutos',
         plataforma: 'Wechat',
