@@ -28,8 +28,8 @@ const clientes = [
         mensagem: 'Sharpay: I want it all! The fame and the fortune and more! [traduzir]',
         atendente: 'Ryan Evans',
         tempoEnvio: '2 minutos',
-        plataforma: 'Telegram',
-        plataformaImg: 'telegram.png'
+        plataforma: 'Instagram',
+        plataformaImg: 'insta.png'
     },
     {
         nome: 'Jiwoo',
@@ -58,8 +58,8 @@ const clientes = [
         mensagem: 'Atendente: Olá! Para fazer seu cadastro na plataforma é só',
         atendente: 'Atendente',
         tempoEnvio: '5 minutos',
-        plataforma: 'Messenger',
-        plataformaImg: 'messenger.png'
+        plataforma: 'Telagram',
+        plataformaImg: 'telegram.png'
     },
     {
         nome: '+55 11 9000-0000',
@@ -68,8 +68,8 @@ const clientes = [
         mensagem: 'Atendente: Olá! Para fazer seu cadastro na plataforma é só',
         atendente: 'Atendente',
         tempoEnvio: '5 minutos',
-        plataforma: 'Messenger',
-        plataformaImg: 'messenger.png'
+        plataforma: 'Whatsapp',
+        plataformaImg: 'zap.png'
     }
 
 ]
