@@ -1,57 +1,116 @@
 'use strict'
 
+/*    <div class="container">
+        <img src="./img/chuu2.jpg" alt="" class="a">
+        <div class="b">Chuu from LOONA</div>
+        <div class="c">1</div>
+        <div class="d">Há 30 minutos</div>
+        <div class="e">teste says: 점점 더 두근대는 맘
+            전부 다 줄게 take my heart</div>
+        <div class="f"> ORBIT teste</div>
+        <img src="./img/zap.png" alt="" class="g">
+    </div> */
+
 const clientes = [
     {
-        nome: 'Jerome Bueno',
+        nome: 'Chuu from LOONA',
         notificacao: '2',
-        imagem: 'hugo.jpg',
-        mensagem: 'Posso realizar o pagamento por...',
-        atendente: 'João Paulo',
-        tempoEnvio: '30 minutos'
+        imagem: 'chuu2.jpg',
+        mensagem: 'Teste: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'orbit',
+        tempoEnvio: '30 minutos',
+        plataforma: 'Whatsapp',
+        plataformaImg: 'zap.png'
     },
     {
-        nome: 'Jerome Bueno',
+        nome: 'Chuu from LOONA',
         notificacao: '2',
-        imagem: 'hugo.jpg',
-        mensagem: 'Posso realizar o pagamento por...',
-        atendente: 'João Paulo',
-        tempoEnvio: '30 minutos'
+        imagem: 'chuu2.jpg',
+        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'HEART attack',
+        tempoEnvio: '30 minutos',
+        plataforma: 'Whatsapp',
+        plataformaImg: 'zap.png'
     },
     {
-        nome: 'Daniel Silva',
-        notificacao: '1',
-        imagem: 'joao.jpg',
-        mensagem: 'Márcia diz: Bom dia, como posso ajuda...',
-        atendente: 'Márcia',
-        tempoEnvio: '5 minutos'
+        nome: 'Chuu from LOONA',
+        notificacao: '2',
+        imagem: 'chuu2.jpg',
+        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'Chuu atende',
+        tempoEnvio: '30 minutos',
+        plataforma: 'Messenger',
+        plataformaImg: 'messenger.png'
+    },
+    {
+        nome: 'Chuu from LOONA',
+        notificacao: '2',
+        imagem: 'chuu2.jpg',
+        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'KIM JIWOO',
+        tempoEnvio: '30 minutos',
+        plataforma: 'Telegram',
+        plataformaImg: 'telegram.png'
+    },
+    {
+        nome: 'Chuu from LOONA',
+        notificacao: '2',
+        imagem: 'chuu2.jpg',
+        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'KIM JIWOO',
+        tempoEnvio: '30 minutos',
+        plataforma: 'Telegram',
+        plataformaImg: 'telegram.png'
+    },    
+    {
+        nome: 'Chuu from LOONA',
+        notificacao: '2',
+        imagem: 'chuu2.jpg',
+        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'KIM JIWOO',
+        tempoEnvio: '30 minutos',
+        plataforma: 'Telegram',
+        plataformaImg: 'telegram.png'
+    },    
+    {
+        nome: 'Chuu from LOONA',
+        notificacao: '2',
+        imagem: 'chuu2.jpg',
+        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'KIM JIWOO',
+        tempoEnvio: '30 minutos',
+        plataforma: 'Telegram',
+        plataformaImg: 'telegram.png'
+    },
+    {
+        nome: 'Chuu from LOONA',
+        notificacao: '2',
+        imagem: 'chuu2.jpg',
+        mensagem: 'teste says: 점점 더 두근대는 맘전부 다 줄게 take my heart',
+        atendente: 'KIM JIWOO',
+        tempoEnvio: '30 minutos',
+        plataforma: 'Telegram',
+        plataformaImg: 'telegram.png'
     }
 ]
 
 function criarChat (cliente){
-    const container = document.getElementById('chat-container')
+    const container = document.getElementById('container')
 
     const chat = document.createElement('div')
-    chat.classList.add('chat')
+    chat.classList.add('container-chat')
 
-    const imagem = document.createElement('img')
-    imagem.src = `./img/${cliente.imagem}`  
-    imagem.alt = cliente.nome
-
-    const conteudoMeio = document.createElement('div')
-    conteudoMeio.classList.add('conteudo-meio')
-
-    const cimaContato = document.createElement('div')
-    cimaContato.classList.add('cima-contato')
-
-    const tituloContato = document.createElement('div')
-    tituloContato.classList.add('titulo-contato')
+    const perfil = document.createElement('img')
+    perfil.src = `./img/${cliente.imagem}`  
+    perfil.alt = cliente.nome
+    perfil.classList.add('perfil')
     
     const contato = document.createElement('h2')
     contato.classList.add('contato')
     contato.textContent = cliente.nome
 
     const numeroMensagens = document.createElement('div')
-    numeroMensagens.classList.add('numero-mensagens')
+    numeroMensagens.classList.add('notificacao')
     numeroMensagens.textContent = cliente.notificacao
 
     const tempoEnvio = document.createElement('p')
@@ -62,19 +121,23 @@ function criarChat (cliente){
     mensagem.classList.add('mensagem')
     mensagem.textContent = cliente.mensagem
 
+    const atendenteIcon = document.createElement('img')
+    atendenteIcon.src = './img/atendente.png'
+    atendenteIcon.alt = 'Ícone de atendente'
+    atendenteIcon.classList.add('atendente-icon')
+
     const atendente = document.createElement('div')
     atendente.classList.add('atendente')
-    mensagem.textContent = cliente.atendente
+    atendente.textContent = cliente.atendente
 
-    tituloContato.replaceChildren(contato, numeroMensagens)
-    cimaContato.replaceChildren(tituloContato, tempoEnvio)
+    const plataforma = document.createElement('img')
+    plataforma.src = `./img/${cliente.plataformaImg}`  
+    plataforma.alt = cliente.plataforma
+    plataforma.classList.add('plataforma')
 
-    conteudoMeio.replaceChildren(cimaContato, mensagem, atendente)
-
-    chat.replaceChildren(imagem, conteudoMeio)
-
+    atendente.appendChild(atendenteIcon)
+    chat.replaceChildren(perfil, contato, numeroMensagens, tempoEnvio, mensagem, atendente, plataforma)
     container.appendChild(chat)
-
 }
 
 clientes.forEach(criarChat)

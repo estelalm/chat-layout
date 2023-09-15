@@ -1,105 +1,120 @@
-/*       rever essa estrutura......... 
-        <div class="chat">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDWs-FJ6bIzHjMYRjKxGfUzATaz3H4vsaeEw&usqp=CAU" alt="perfil">
-            <div class="conteudo-meio">
-                <div class="cima-contato">
-                    <div class="titulo-contato">
-                        <h2 class="contato">Jerome Bueno</h2>
-                        <div class="numero-mensagens">1</div>
-                    </div>
-                    <p class="tempo-envio">Há 30 minutos</p>
-                </div>
-                <span class="mensagem">Posso realizar o pagamento por...</span>
-                <div class="atendente"> <img src="./img/atendente.png" alt="ícone de atendente">João Paulo</div>
-            </div>
-        </div>
-        
-*/
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-        background-color: #ebebeb;
-        font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        place-content: center;
-        height: 100vh;
-        width: 100vw;
-        margin: 10px;
+    background-color: #bad8bf7a;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 1vw;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
 }
 
-.chat-container{
+.container{
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding: 12vw 10vh;
-    width: 1000px;
-    height: 100%;
-    border: solid gray;
+    width: 40vw;
+    height: 90vh;
+    overflow-y: scroll;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: 2vw;
+    gap: 2vh;
+    overflow-x: hidden;
+    background-color: #dbf5e0a8;
 }
 
-.chat{
-    display: flex;
-    align-items: center;
-    padding: 1vw;
-    gap: 2%;
-    border: solid 1px gray;
-    border-radius: 20px;
-    height: 10vh;
+header{
+    background-color: #b8cebe;
     width: 100%;
-    font-size: 0.8rem;
-}
-.chat img{
-    height: 6vh;
-    border-radius: 50%;
-}
-.conteudo-meio{
-    display: grid;
-    gap: 12%;
-    align-content: center;
-}
-.cima-contato{
+    height: 3vh;
     display: flex;
-    gap: 40%;
-}
-.titulo-contato{
-    display: flex;
-    gap: 5%;
     align-items: center;
-    width: 50%;
-    font-size: 0.6rem;
+    justify-content: center;
 }
-.numero-mensagens{
-    padding: 5px;
-    text-align: center;
-    background-color: rgb(241, 0, 72);
-    color: white;
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #acacac; 
+  }
+
+.container-chat{
+    display: grid;
+    row-gap: 1vh;
+    column-gap: 1vw;
+    padding: 1.4vh 1vw;
+    min-width: 300px;
+    max-width: 44vw;
+    height: 12vh;
+    border: solid gray 1px;
+    border-radius: 10px;
+    grid-template-areas: 
+        "a a b b b c c d d g"
+        "a a e e e e e e e g"
+        "a a f f f f f f f g";
+    grid-auto-rows: 3.5vh;
+}
+
+
+.perfil{
+    grid-area: a;
     border-radius: 50%;
-    width:20px;
-    height: 20px;
-    place-self: top;
+    height: 70%;
+}
+.contato{
+    width: 100%;
+    grid-area: b;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+.notificacao{
+    background-color: #235f2b;
+    color: wheat;
+    grid-area: c;
+    width: 1.6vw;
+    height: 1.6vw;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 3.2vh;
+    font-size: 1vw;
+}
+.tempo-envio{
+    grid-area: d;
+    font-size: 0.8vw;
+}
+.mensagem{
+    grid-area: e;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1vw;
 }
 .atendente{
-    background-color: lightgreen;
-    padding: 6px;
     display: flex;
-    align-items: center;
-    gap: 2%;
-    border-radius: 8px;
-    width: 50%;
+    background-color: #70cf7d;
+    grid-area: f;
+    font-size: 0.8vw;
     position: relative;
-    top: 50%;
+    width: 40%;
+    border-radius: 5px;
+    padding: 0.5% 1vw;
+    gap: 0.6vw;
+    height: 80%;
+    justify-content: left;
+    flex-direction: row-reverse;
 }
-.atendente img{
-    width: 5%;
-    height: fit-content;
-
+.atendente-icon{
+    height: 80%;
 }
-
-.tempo-envio{
-    width: 20%;
+.plataforma{
+    position: relative;
+    left: 100%;
+    width: 30px;
+    padding: 0;
 }
