@@ -21,12 +21,13 @@ body{
     width: 40vw;
     height: 90vh;
     overflow-y: scroll;
-    border: solid 1px gray;
+    border: solid 1px rgba(128, 160, 125, 0.345);
     border-radius: 10px;
     padding: 2vw;
     gap: 2vh;
     overflow-x: hidden;
-    background-color: #dbf5e0a8;
+    background-color: #dbf5e038;
+    box-shadow: 0 0 3px #235f2b ;
 }
 
 header{
@@ -36,13 +37,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
 }
 
 ::-webkit-scrollbar {
     width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: #acacac; 
+    background: #dcfde814; 
   }
 
 .container-chat{
@@ -53,13 +55,14 @@ header{
     min-width: 300px;
     max-width: 44vw;
     height: 12vh;
-    border: solid gray 1px;
+    border: solid rgba(179, 211, 190, 0.888) 1px;
     border-radius: 10px;
     grid-template-areas: 
         "a a b b b c c d d g"
         "a a e e e e e e e g"
         "a a f f f f f f f g";
     grid-auto-rows: 3.5vh;
+    grid-auto-columns: 5% 5% 16% 5% 5% 5% 5% 5% 15%;
     place-content: left;
 }
 
@@ -89,6 +92,8 @@ header{
 .tempo-envio{
     grid-area: d;
     font-size: 0.8vw;
+    width: 100%;
+    color: #000000a4;
 }
 .mensagem{
     grid-area: e;
@@ -104,10 +109,11 @@ header{
     position: relative;
     width: 40%;
     border-radius: 5px;
-    padding: 0.5% 1vw;
+    padding: 0.2vw 0.6vw;
     gap: 0.6vw;
     height: 80%;
     justify-content: left;
+    align-items: center;
     flex-direction: row-reverse;
 }
 .atendente-icon{
@@ -121,8 +127,33 @@ header{
 
 }
 
-@media(max-width: 400px){
-
+@media (max-width: 400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 96vh;
+        align-items: center;
+    }
+    
+    .container-chat{
+        padding: 1.4vh 1vw;
+        min-width: 300px;
+        max-width: 44vw;
+        height: 12vh;
+        border: solid rgba(179, 211, 190, 0.888) 1px;
+        border-radius: 10px;
+        grid-template-areas: 
+            "a a b b b c c d d g"
+            "a a e e e e e e e g"
+            "a a f f f f f f f g";
+        grid-auto-rows: 3.5vh;
+        grid-auto-columns: 5% 5% 16% 5% 5% 5% 5% 5% 15%;
+        place-content: left;
+    }
+    .perfil{
+        height: 10vw;
+    }
 
 
 }
